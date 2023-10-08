@@ -1,117 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <style>
-        .contact h1{
-            text-align: center;
-            font-weight: bold;
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Shade&family=Cinzel:wght@800&family=Comic+Neue:wght@700&family=DM+Serif+Display:ital@1&family=Dongle:wght@300&family=Frijole&family=Kanit:wght@300&family=Monoton&family=Nunito&family=Poppins:wght@100;400&family=Rubik+Moonrocks&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Rye&family=Tapestry&family=Tillana:wght@700&family=Tilt+Prism&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Shade&family=Cinzel:wght@800&family=Comic+Neue:wght@400;700&family=DM+Serif+Display:ital@1&family=Dongle:wght@300&family=Frijole&family=Kalam&family=Kanit:wght@300&family=Lora:ital,wght@1,700&family=Marcellus&family=Monoton&family=Nunito&family=Poppins:wght@100;400&family=Rubik+Moonrocks&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Rye&family=Tapestry&family=Tillana:wght@700&family=Tilt+Prism&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cinzel:wght@500&family=Cormorant+Garamond:wght@700&family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Inter:wght@500&family=Josefin+Sans:ital@0;1&family=Montserrat:wght@500&family=Niconne&family=Open+Sans&family=Parisienne&family=Prosto+One&family=Roboto:wght@700&family=Yeseva+One&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Marcellus';
         }
-        .row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-input[type=text],select,textarea{
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 2px solid black;
-    resize: vertical;
-    padding: 10px;
-    font-size: 20px;
-    background-color: white;
-}
-input[type=email],select,textarea{
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 2px solid black;
-    resize: vertical;
-    padding: 10px;
-    background-color: white;
-    font-size: 20px;
-}
-input[type=submit]{
-    padding: 3px;
-    background-color: #a2c3dd;
-    border: 6px solid black;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-}
-input[type=submit]:hover{
-    background-color: #b237d1 ;
-}
-.col-25{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    width: 25%;
-    float: left;
-    margin-top: 6px;
-    margin-left: 2px;
-}
-.col-75{
-    float: left;
-    margin-top: 6px;
-    width: 75%;
-    padding: 2px;}
-    *{
-        background-color: #D8E8EE;
-    }
+
+        .background {
+            background-color: #e4b5cb;
+            background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+            background-size: cover;
+            height: 100vh;
+            width: auto;
+        }
+
+
+        label {
+            font-size: 20px;
+            color: blueviolet;
+            font-family: 'Kanit';
+        }
+
+        .h1 {
+            color: rgb(82, 0, 182);
+            font-size: 45px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #999;
+            font-size: 23px;
+            padding: 2px;
+            font-family: "Dongle";
+        }
+
+        textarea::placeholder {
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+        }
+
+        .button {
+            background-color: blueviolet;
+            color: white;
+            font-family: 'kanit';
+            font-size: 21px;
+        }
+
+        .button:hover {
+            background-color: #cd9cf2;
+        }
+
+        .image {
+            height: 100vh;
+            border-radius: 350% !important;
+        }
+
+
+        @media (min-width: 992px) {
+
+            .box-lg {
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+                padding: 4rem !important;
+                padding-bottom: 0 !important;
+                padding-top: 6rem !important;
+                /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+                background-image: linear-gradient(to top, rgb(110, 70, 120), rgb(80, 51, 88));
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                height: 100vh;
+
+            }
+
+
+            label {
+                font-size: 20px;
+                color: rgb(254, 254, 255);
+                font-family: 'Kanit';
+            }
+
+            .h1 {
+                color: rgb(251, 249, 253);
+            }
+
+            .button {
+                background-color: rgb(139, 87, 154);
+            }
+
+
+        }
+
+        @media (max-width : 992px) {
+
+            .box {
+                display: block;
+                border-radius: 10px;
+                background-color: aliceblue;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .background {
+                background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+
+                height: 100vh;
+                padding: 2rem;
+                width: auto;
+            }
+        }
+
+        @media (min-width :650px) and (max-width:992px) {
+            .background {
+                padding: 4rem;
+                padding-top: 2rem;
+            }
+
+            .box {
+                max-width: 600px;
+                margin: auto;
+            }
+
+        }
     </style>
-    </head>
+
+
+</head>
+
 <body>
-    <div class="contact">
-        <h1>Contact Us</h1>
-    </div>
-    <div class="container">
-        <div class="chat-box">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="fname" placeholder="Your First Name">
-                </div>
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col-12 col-lg-6 box-lg box shadow">
+                <form method="POST" class="">
+                    <h1 class="pb-4 text-center h1">Contact Us</h1>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" class="form-control  mb-3" name="firstname"
+                            placeholder='Your First Name' required />
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" class="form-control  mb-3" name="lastname"
+                            placeholder='Your Last Name' required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control  mb-3" name="email"
+                            placeholder='Enter Your Email' required />
+                    </div>
+                    <div>
+                        <label for="feedback">Message / Suggestion</label><br />
+                        <textarea id="feedback" name="feedback" placeholder="Write Something..."></textarea><br>
+                    </div>
+                    <div class="text-center text-lg-left">
+                        <input type="submit" id="submit" class="btn button mt-3" placeholder="Submit" />
+                    </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lname" placeholder="Your Last Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col-75">
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                  <label for="feedback">Message/Suggestion</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg?w=2000"
+                    class="image w-100" />
             </div>
 
         </div>
-       
-        
     </div>
-     
 </body>
+
 </html>
